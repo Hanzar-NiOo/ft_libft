@@ -26,7 +26,7 @@ bonus: $(OBJS) $(BONUS_OBJS)
 	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 $(OBJS) : %.o : %.c
-	$(CC) $(CFLAGS) -I libft.h -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean :
 	$(RM) $(OBJS) $(BONUS_OBJS)
